@@ -11,7 +11,8 @@ function carregar() {
   const mes = data.getMonth() + 1; // Os meses começam do zero, então adicionamos 1
   const ano = data.getFullYear();
 
-  msg.innerHTML = `Agora são ${hora} horas, ${minutos} minutos e ${segundos} segundos do dia ${dia}/${mes}/${ano}`;
+  msg.innerHTML = `Agora são ${hora} horas, ${minutos} minutos e ${segundos} segundos.<br>${dia}/${mes}/${ano}`;
+
 
   if (hora >= 0 && hora < 12) {
     //bom dia
