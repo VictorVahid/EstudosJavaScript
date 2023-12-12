@@ -6,7 +6,7 @@ function carregar() {
   const minutos = data.getMinutes();
   const segundos = data.getSeconds();
 
-  msg.innerHTML = `Agora são ${hora} horas,${minutos}minutos e  ${segundos}segundos`;
+  msg.innerHTML = `Agora são ${hora} horas ${minutos} minutos e  ${segundos} segundos`;
 
   if (hora >= 0 && hora < 12) {
     //bom dia
