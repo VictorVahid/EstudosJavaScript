@@ -1,12 +1,17 @@
 function carregar() {
   const msg = window.document.getElementById("msg");
   const imagem = window.document.getElementById("imagem");
+
   const data = new Date();
+
   const hora = data.getHours();
   const minutos = data.getMinutes();
   const segundos = data.getSeconds();
+  const dia = data.getDate();
+  const mes = data.getMonth() + 1; // Os meses começam do zero, então adicionamos 1
+  const ano = data.getFullYear();
 
-  msg.innerHTML = `Agora são ${hora} horas ${minutos} minutos e  ${segundos} segundos`;
+  msg.innerHTML = `Agora são ${hora} horas, ${minutos} minutos e ${segundos} segundos do dia ${dia}/${mes}/${ano}`;
 
   if (hora >= 0 && hora < 12) {
     //bom dia
