@@ -3,8 +3,10 @@ function carregar() {
   const imagem = window.document.getElementById("imagem");
   const data = new Date();
   const hora = data.getHours();
+  const minutos = data.getMinutes();
+  const segundos = data.getSeconds();
 
-  msg.innerHTML = `Agora são ${hora} horas`;
+  msg.innerHTML = `Agora são ${hora} horas,${minutos}minutos e  ${segundos}segundos`;
 
   if (hora >= 0 && hora < 12) {
     //bom dia
@@ -20,3 +22,5 @@ function carregar() {
     document.body.style.background = "#1d2025";
   }
 }
+
+setInterval(carregar, 1000);
