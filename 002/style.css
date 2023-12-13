@@ -37,19 +37,13 @@ footer {
   font-style: italic;
   margin-top: auto;
 }
-img#foto {
-  display: block;
-  margin: -23% 0 0 -15%;
-
-}
-
 #formulario p {
   line-height: 2.5rem;
 }
 
 .imagem-nao-selecionavel {
   user-select: none;
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  -webkit-user-select: none; /* Safari/Chrome */
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  -webkit-user-select: none; 
 }

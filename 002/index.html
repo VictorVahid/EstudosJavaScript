@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="Imagens/population.png" type="image/x-icon">
-    <title>Verificador de Idade</title>
+    <title class="imagem-nao-selecionavel">Verificador de Idade</title>
   </head>
   <body>
     <header>
       <h1 class="imagem-nao-selecionavel">Verificador de Idade</h1>
     </header>
     <section>
-      <div id="formulario" class="imagem-nao-selecionavel">
-        <p>Ano de nascimento:
+      <div id="formulario">
+        <p class="imagem-nao-selecionavel">Ano de nascimento:
           <input type="number" name="txtano" id="txtano" min="0" />
         </p>
-        <p>
+        <p class="imagem-nao-selecionavel">
           Sexo:
           <input type="radio" name="radsex" id="mas" checked />
-          <label for="masc">Masculino</label>
+          <label for="mas">Masculino</label>
           <input type="radio" name="radsex" id="fem" />
           <label for="fem">Feminino</label>
         </p>
-        <p>
-          <input type="button" value="Verificar" onclick="verificar()">
+       <p class="imagem-nao-selecionavel">
+          <input type="button" value="verificar" id="verificar-btn" onclick="verificar()">
         </p>
       </div>
       <div id="res" class="imagem-nao-selecionavel">
