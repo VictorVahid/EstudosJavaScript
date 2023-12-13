@@ -6,12 +6,10 @@
 }
 body,
 html {
-  margin: 0;
   height: 100%;
 }
 body {
   background-color: #0a4363;
-  margin: 0;
   display: flex;
   flex-direction: column;
 }
@@ -22,7 +20,7 @@ header {
 }
 
 section {
-  background: rgba(255, 255, 255, 0.486);
+  background: rgb(255, 255, 255);
   border-radius: 0.6rem;
   padding: 0.938rem;
   width: 31.25rem;
@@ -31,12 +29,27 @@ section {
   margin-top: 0;
 }
 div {
-  text-align: center;
-  padding: 0.5rem;
+  text-align: justify;
 }
 footer {
   color: white;
   text-align: center;
   font-style: italic;
   margin-top: auto;
+}
+img#foto {
+  display: block;
+  margin: -23% 0 0 -15%;
+
+}
+
+#formulario p {
+  line-height: 2.5rem;
+}
+
+.imagem-nao-selecionavel {
+  user-select: none;
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  -webkit-user-select: none; /* Safari/Chrome */
 }
