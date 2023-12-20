@@ -1,6 +1,3 @@
-function comprimento() {
-  var ola = "hello world!";
-  return ola;
-}
-
-console.log(comprimento());
+alert("minha primeira mensagem!");
+confirm("está gostando de JS?");
+prompt("Qual é o seu nome?");
