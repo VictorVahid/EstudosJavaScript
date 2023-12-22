@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora de gasto por KM</h1>
+    </header>
+    <section>
+      <p>
+        Preço da Gasolina:
+        <input type="number" class="Pgas" />
+      </p>
+      <p>
+        KM por litro
+        <input type="text" class="Gmedio" />
+      </p>
+      <p>
+        Distancia em KM da viagem:
+        <input type="number" class="distanciaKM" />
+      </p>
+
+      <input
+        type="button"
+        value="calcular"
+        id="verificar-btn"
+        onclick="verificar()"
+      />
+
+      <div id="res">A resposta aparecerá aqui!</div>
+    </section>
+
+    <script src="aula.js"></script>
+  </body>
+</html>
